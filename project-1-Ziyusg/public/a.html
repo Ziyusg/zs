@@ -1,0 +1,61 @@
+<!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- let's link to our stylesheet (found in public/css/styles.css)-->
+<link rel="stylesheet" type="text/css" href="/css/styles.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+
+<!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
+<body style="font-family: 'Poppins', sans-serif;">
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Oski Mountain Park</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Tickets</a>
+          <a class="nav-link" href="#">Map</a>
+          <a class="nav-link disabled">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="alert alert-primary" role="alert">
+   You are on Trail Blue. 
+   You have 3.5 miles left, estimate 3.2 hours.
+   <u>You can switch to Trail Red, only 2 miles left. </u>
+  </div>
+
+  <div class="main">
+    <img src="https://www.visitsequoia.com/~/media/parks/sequoia/explore/spring-summer-fall-activities/hiking-trails/seki-hiking-trail-map.jpg?la=en" alt="map" class="responsive center">
+    <div>&nbsp;</div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="button">Check Trail Red</button>
+  </div>
+
+  <div>&nbsp;</div> 
+
+  <nav class="nav nav-pills nav-fill" style="color:#202B34">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <a class="nav-link" href="#">Map</a>
+    <a class="nav-link" href="#">Trails</a>
+    <a class="nav-link" href="#">Emergency</a>
+  </nav>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
+
